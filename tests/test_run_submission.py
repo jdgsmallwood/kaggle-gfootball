@@ -1,4 +1,4 @@
-from test_submission import run_submission_simulation
+from run_submission import run_submission_simulation
 
 
 class TestTestSubmission:

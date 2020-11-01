@@ -39,5 +39,17 @@ def run_submission_simulation(submission_file_name, opponent='run_right'):
                   f"info: {right['info']}\n")
 
     left_score, right_score = output[-1][0]['observation']['players_raw'][0]['score']
-    print(f"Final score: {left_score} : {right_score}")
+
     return [left_score, right_score]
+
+
+def main():
+    submission_file_name = "agents/submission.py"
+    opponent = 'run_right'
+
+    left_score, right_score = run_submission_simulation(submission_file_name, opponent=opponent)
+    print(f"Final score: {left_score} : {right_score}")
+
+
+if __name__ == '__main__':
+    main()

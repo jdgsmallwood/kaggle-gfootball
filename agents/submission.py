@@ -28,6 +28,7 @@ def agent(obs):
             return Action.Shot
         # Run towards the goal otherwise.
         return Action.Right
+    
     else:
         # Run towards the ball.
         if obs['ball'][0] > controlled_player_pos[0] + 0.05:
